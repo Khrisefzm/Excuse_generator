@@ -23,7 +23,7 @@ window.onload = function() {
   let randomWhat = 0;
 
   if (randomWho <= 2) {
-    randomAction = Math.floor(Math.random() * 2 + 1);
+    randomAction = Math.floor(Math.random() * 2);
     randomWhat = 0;
   } else {
     randomAction = Math.floor(Math.random() * 2 + 2);
@@ -34,15 +34,14 @@ window.onload = function() {
     }
   }
 
-  console.log(
-    who[randomWho] +
+  document.write(
+    who[randomAction] +
       " " +
       action[randomAction] +
       " " +
       what[randomWhat] +
       " " +
-      when[randomWhen] +
-      "."
+      when[randomWhen]
   );
-  document.getElementById("excuse").innerHTML = excuse;
+  //document.getElementById("excuse").innerHTML = excuse;//
 };
