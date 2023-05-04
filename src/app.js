@@ -17,8 +17,8 @@ window.onload = function() {
     "during my lunch",
     "while I was praying"
   ];
-  let randomWho = Math.floor(Math.random() * who.length + 1);
-  let randomWhen = Math.floor(Math.random() * when.length + 1);
+  let randomWho = Math.floor(Math.random() * who.length);
+  let randomWhen = Math.floor(Math.random() * when.length);
   let randomAction = 0;
   let randomWhat = 0;
 
